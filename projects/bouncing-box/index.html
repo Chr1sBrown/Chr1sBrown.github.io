@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: crimson;
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -61,7 +61,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionx = 0
 
 			
 			/* 
@@ -70,8 +70,8 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
+				moveBoxTo(positionx)
+				positionx = positionx +10
 			};
 
 			/* 
@@ -80,7 +80,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionx = 0;
 
 
 			};
